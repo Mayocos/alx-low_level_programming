@@ -1,22 +1,24 @@
 #include <stdio.h>
-
+#include <unistd.h>
 /**
- * main - prints all possible different combinations of two digits
- * Return: ALways 0 (Success)
+ * main - Entyr point
+ * Description: prints two digits combination
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-int n, m;
+int c, i;
 
-for (n = 48; n <= 56; n++)
+for (c = 0; c <= 9; c++)
 {
-for (m = 49; m <= 57; m++)
+for (i = 0; i <= 9; i++)
 {
-if (m > n)
+if (c < i)
 {
-putchar(n);
-putchar(m);
-if (n != 56 || m != 57)
+putchar(c);
+putchar(i);
+
+if (c != 8 || (c == 8 && i != 9))
 {
 putchar(,);
 putchar( );
