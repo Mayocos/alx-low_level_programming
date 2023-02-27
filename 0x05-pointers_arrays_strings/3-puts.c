@@ -10,6 +10,6 @@ while (*str != 0)
 {
 _putchar(*str++);
 }
- _putchar(c);
+ _putchar(n);
 }
 
