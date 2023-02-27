@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
@@ -16,3 +15,4 @@ int main(void)
     printf("n=%d\n", n);
     return (0);
 }
+
